@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7D2Ae8;
+}
+.wapper{
+    user-select: none;
+}
+.wapper .time{
+    height: 100px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    box-shadow: 10px 10px 10px rbga(0,0,0,0.9);
+    padding: 0 10px;
+}
+.wapper .time span{
+    width: 100px;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #333;
+}
+
+.time span.colon{
+    width: 10px;
+}
+.time span .ms-colon,
+.time span .millisecond{
+    color: #7D2Ae8;
+}
+
+.wapper .buttons{
+    text-align: center;
+    margin-top: 20px;
+}
+.buttons button{
+    padding: 6px 16px;
+    outline: none;
+    border: none;
+    margin: 0 5px;
+    color: #7D2Ae8;
+    background-color: #fff;
+    font-size: 19px;
+    font-weight: 500;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.buttons button.stopActive,
+.buttons button.active{
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+@media screen and (max-width:600px) {
+    .wapper .time{
+        height: 80px;
+    }
+    .wapper .time span{
+        width: 80px;
+    }
+    .time span.colon{
+        width: 7px;
+    }
+    .wapper{
+        transform: translateY(-100px);
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
